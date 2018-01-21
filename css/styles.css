@@ -1,0 +1,205 @@
+*
+{
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+	color: black;
+}
+
+ul 
+{
+	list-style-type: none;
+}
+
+body 
+{
+    background-image: url("../img/background.jpg");
+	background-size: 100% auto;
+	background-repeat: repeat;
+	background-color: green;
+	
+	font-family: Verdana, sans-serif;
+}
+
+#center
+{
+	width: 1200px;
+	margin: 0 auto;
+	margin-top: 155px;
+}
+
+.header 
+{
+    padding: 60px 0px;
+    width: 100%;
+    background: #22AB90;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+	font-size: 150%;
+}
+
+.weekdays 
+{
+    margin: 0;
+    padding: 10px 0;
+    background-color:#ddd;
+}
+
+.weekdays li 
+{
+    display: inline-block;
+    width: 13.6%;
+    color: #644;
+    text-align: center;
+
+}
+
+.days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+	font-size: 15px;
+    color: #777;
+	padding: 8px 0px;
+}
+
+.days li:hover {
+    background: #22AB90;
+    color: white
+}
+
+.button
+{
+    margin: 0px;
+    padding: 10px 0;
+    background-color:#ddd;
+    width: 100%;
+    text-align: center;
+	margin: 20px 0px;
+}
+
+.button:hover
+{
+    background-color: #22AB90;
+}
+
+#login
+{
+    margin: 0;
+    padding: 10px 0;
+    background-color:#eee;
+	text-align: center;
+	font-size: 18px;
+}
+
+#login input 
+{
+	text-align: center;
+	margin: 5px 4px;
+	font-size: 17px;
+}
+
+#add
+{
+	text-align: center;
+	margin: 5px 4px;
+	font-size: 17px;
+}
+
+#login .button
+{
+	margin: 0px;
+	width: 30%;
+	padding: 2px 0px;
+}
+
+#day
+{
+    margin: 0;
+    padding: 10px 0;
+    background-color:#eee;
+	text-align: center;
+	font-size: 18px;
+}
+
+.field_type
+{
+	float: left;
+	width: 50%;
+	padding-bottom: 20px;
+	text-align: center;
+	font-size: 18px;
+}
+
+.field_type ul
+{
+	font-size: 16px;
+	padding-left: 150px;
+	text-align: left;
+}
+
+.field_type li:hover
+{
+	background-color: #22AB90;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.error
+{
+	font-size: 35px;
+	padding: 35px 0px;
+}
+
+#hours li
+{
+	padding: 2px 0px;
+}
+
+#hours li :hover
+{
+	background-color: #22AB90;
+}
+
+.list
+{
+	text-align: left;
+	padding-left: 300px;
+}
+
+.list2
+{
+	text-align: left;
+	padding-left: 150px;
+}
+
+.list3
+{
+	text-align: left;
+	padding-left: 250px;
+}
+
+.list4
+{
+	text-align: left;
+	padding-left: 425px;
+}
+
+.employ :hover
+{
+	background-color: #22AB90;
+}
