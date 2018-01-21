@@ -1,6 +1,9 @@
 <?php
 	session_start();
 	
+	if(isset($_SESSION['user_id']))
+		header("location: index.php");
+	
 	$error = ''; 
 	
 	if (isset($_POST['submit']) && isset($_POST['username']) && isset($_POST['password'])) 
@@ -34,7 +37,8 @@
 				$_SESSION['user_id'] = $user["id_uzytkownika"];
 				
 				header("location: index.php"); 
-			} else 
+			} 
+			else 
 			{
 				$error = "Nieprawidłowy login lub hasło";
 			}
@@ -43,7 +47,6 @@
 		}
 	}
 	
-
 	if(isset($_SESSION['user_id']))
 		header("location: index.php");
 ?>
@@ -54,19 +57,29 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		
+		<link rel="stylesheet" href="css/styles.css">
+		
         <title> Boiska sportowe - logowanie </title>
     </head>
     <body>  
-        <form action="login.php" method="POST">
-			<label> Login: </label>
-			<input name="username" type="text">
-			<br />
-			<label> Hasło: </label>
-			<input name="password" type="password">
-			<br/>
-			<input name="submit" type="submit" value="Zaloguj">
-		</form>
+		<div id="center">
+			<div class="header"> 
+				Logowanie
+			</div>
+			<div id="login">
+				<form action="login.php" method="POST">
+					<label> Login: </label>
+					<input name="username" type="text">
+					<br />
+					<label> Hasło: </label>
+					<input name="password" type="password">
+					<br/>
+					<input name="submit" type="submit" value="Zaloguj się" class="button">
+				</form>
 		
-		<?php echo $error; ?>
+				<?php echo $error; ?>
+			</div>
+			<a href="index.php"> <div class="button"> Strona główna </div> </a>
+		</div>
     </body>
 </html>
